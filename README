@@ -40,5 +40,9 @@ idinstall/idbuild.
 
 I'm too lazy to make a real package.
 
+------
 
+For UnixWare ≥ 2 (tested and developed on 7.1.1). 
+This version fixes silly state errors in version 4.3.
 
+http://perso.calvaedi.com/~john/
