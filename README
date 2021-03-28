@@ -1,0 +1,44 @@
+An X.25 over TCP interface for UnixWare, rfc1613, "xot".
+
+Provides a TLI interface, with optional extension for Q packets.
+
+A server, xotlink, waits for incoming TCP calls and links them
+to the xot driver.
+
+When the xot driver needs to make an outgoing TCP call it asks xotlink
+to establish the call.  When xotlink is done it links the call to the
+xot driver.
+
+When xot is finished with the tcp connection it asks xotlink to clear
+the call.
+
+The xotlink configuration file, read on standard input is a list of
+xot devices and the matching remote ip address:
+
+/dev/xot1/000	cisco1
+/dev/xot2/000	cisco2
+
+To make/accept an X.25 call via "cisco2" the user would code:
+
+	int fd;
+	fd = t_open ("/dev/xot2p", O_RDWR);
+	...
+	
+then t_connect/t_accept as necessary.
+
+BUGS: 
+
+For some reason if the first open of the xot device is not a clone open
+and the driver is not already loaded it gets the major device number
+wrong?!@  Quick & dirty fix - "modadmin -l" the driver first.
+
+The Makefile is a gnu Makefile.
+
+The Makefile assumes you want to install the driver in
+/maint/modules/xot from where a "make install" will do the
+idinstall/idbuild.
+
+I'm too lazy to make a real package.
+
+
+

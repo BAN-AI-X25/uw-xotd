@@ -1,0 +1,11 @@
+#ident "@(#)System	4.1 - 02/12/09 11:10:06 - System file for xot"
+
+# Copyright © 2002 Atlantic Technologies Inc.
+# For conditions of distribution and use, see file LICENSE
+
+$version 2
+
+#name	conf	units	ipl	itype	vec	sioa	eioa	scma	ecma	dma
+xot	Y	256	0	0	0	0	0	0	0	-1
+
+

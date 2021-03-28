@@ -1,0 +1,11 @@
+#ident "@(#)Master	4.1 - 02/12/09 11:10:06 - Master file for xot"
+
+# Copyright © 2002 Atlantic Technologies.
+# For conditions of distribution and use, see file LICENSE
+
+
+$version 2
+$interface ddi 7mp
+$contact info@AtlanTech.COM
+
+xot	xot	cLS	0	0	0-7

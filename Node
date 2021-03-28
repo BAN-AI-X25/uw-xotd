@@ -1,0 +1,29 @@
+#ident "@(#)Node	4.2 - 02/12/17 15:31:46 - Node file for xot"
+
+# Copyright © 2002 Atlantic Technologies.
+# For conditions of distribution and use, see file LICENSE
+
+
+clone	xot1		c:0	xot
+xot	xot1p/%3.3d	c:0	=U
+
+clone	xot2		c:1	xot
+xot	xot2p/%3.3d	c:1	=U
+
+clone	xot3		c:2	xot
+xot	xot3p/%3.3d	c:2	=U
+
+clone	xot4		c:3	xot
+xot	xot4p/%3.3d	c:3	=U
+
+clone	xot5		c:4	xot
+xot	xot5p/%3.3d	c:4	=U
+
+clone	xot6		c:5	xot
+xot	xot6p/%3.3d	c:5	=U
+
+clone	xot7		c:6	xot
+xot	xot7p/%3.3d	c:6	=U
+
+clone	xot8		c:7	xot
+xot	xot8p/%3.3d	c:7	=U

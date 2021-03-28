@@ -1,0 +1,4 @@
+# Configuration file for XOT
+
+/dev/xot1/000	cisco1
+/dev/xot2/000	cisco2
